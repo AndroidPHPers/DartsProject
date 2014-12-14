@@ -1,8 +1,10 @@
 package jp.android.phper.darts;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.View;
 import android.view.Window;
 
 public class MainActivity extends Activity {
@@ -21,5 +23,15 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
+
+    /**
+     * カウントアップボタンを押した時コールバック関数
+     * CountUpActivityに遷移する。
+     * @param v Viewインスタンス
+     */
+    public void onClickCountUp(View v) {
+        Intent intent = new Intent(this, CountUpActivity.class);
+        startActivity(intent);
+    }
 
 }

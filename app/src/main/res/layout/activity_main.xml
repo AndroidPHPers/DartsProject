@@ -26,7 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/main_menu_btn_margin_top"
         android:text="@string/count_up"
-        android:width="@dimen/main_menu_btn_width" />
+        android:width="@dimen/main_menu_btn_width"
+        android:onClick="onClickCountUp" />
 
     <Button
         android:id="@+id/zeroOneMenu"
