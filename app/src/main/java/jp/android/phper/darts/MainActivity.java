@@ -10,7 +10,7 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		//タイトルバー非表示
+		// 繧ｿ繧､繝医Ν繝舌�ｼ髱櫁｡ｨ遉ｺ
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
 	}
