@@ -1,0 +1,11 @@
+.DS_Store
+.classpath
+.project
+project.properties
+/gen
+/bin
+
+.gradle
+.idea
+/build
+local.properties
