@@ -34,6 +34,8 @@
         <activity
             android:name=".CountUpActivity"
             android:label="@string/title_activity_count_up" >
+        </activity>
+        <activity
             android:name=".ZeroOneActivity"
             android:label="@string/title_activity_zero_one" >
         </activity>
