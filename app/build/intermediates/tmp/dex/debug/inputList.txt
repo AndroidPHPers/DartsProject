@@ -1,4 +1,0 @@
-/Volumes/ramdisk/Documents/workspace/Android/darts/app/build/intermediates/classes/debug
-/Volumes/ramdisk/Documents/workspace/Android/darts/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-6a6755fa42d9cb143128b1cd02cf9821cc92f45e.jar
-/Volumes/ramdisk/Documents/workspace/Android/darts/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-fc54b0e00b9c92d8f6b734ef4a3ec506d2567704.jar
-/Volumes/ramdisk/Documents/workspace/Android/darts/app/build/intermediates/pre-dexed/debug/classes-8604c056274911ec221880313580e7dd7c1ee543.jar
