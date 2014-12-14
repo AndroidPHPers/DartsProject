@@ -35,7 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/main_menu_btn_margin_top"
         android:text="@string/zero_one"
-        android:width="@dimen/main_menu_btn_width" />
+        android:width="@dimen/main_menu_btn_width"
+        android:onClick="onClickZeroOne" />
 
     <Button
         android:id="@+id/cricketMenu"

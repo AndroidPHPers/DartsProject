@@ -9,5 +9,6 @@
     <string name="count_up">カウントアップ</string>
     <string name="eagle_eye">イーグルアイ</string>
     <string name="title_activity_count_up">CountUpActivity</string>
+    <string name="title_activity_zero_one">ZeroOneActivity</string>
 
 </resources>
