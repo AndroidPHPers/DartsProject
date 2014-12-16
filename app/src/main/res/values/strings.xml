@@ -11,4 +11,11 @@
     <string name="title_activity_count_up">CountUpActivity</string>
     <string name="title_activity_zero_one">ZeroOneActivity</string>
 
+    <string name="calc_panel_key_undo">UNTHROW</string>
+    <string name="calc_panel_key_double">DOUBLE</string>
+    <string name="calc_panel_key_triple">TRIPLE</string>
+    <string name="calc_panel_key_next">NEXT</string>
+    <string name="calc_panel_key_single_bull">S-BULL</string>
+    <string name="calc_panel_key_double_bull">D-BULL</string>
+
 </resources>
