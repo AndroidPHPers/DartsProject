@@ -40,13 +40,13 @@
                 android:layout_gravity="center_horizontal"
                 android:textSize="60dp" />
         </LinearLayout>
-
-        <include
+        <fragment
+            android:name="jp.android.phper.darts.CalcPanelFragment"
+            android:id="@+id/CalcPanel"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            layout="@layout/common_calc_panel"
-            android:layout_gravity="center_horizontal" />
-
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_calc_panel"/>
     </LinearLayout>
 
 </RelativeLayout>
