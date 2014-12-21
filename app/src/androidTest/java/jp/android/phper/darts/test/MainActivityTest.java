@@ -14,11 +14,11 @@ import static android.test.TouchUtils.clickView;
 
 public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActivity> {
 
+    MainActivity activity;
+
     public MainActivityTest() {
         super(MainActivity.class);
     }
-
-    MainActivity activity;
 
     @Override
     protected void setUp() throws Exception {
@@ -60,7 +60,7 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
         // 遷移が完了するまで待つ
         getInstrumentation().waitForMonitorWithTimeout(main_activity_monitor, 2000);
 
-        // CountUpActvityに遷移したことをテスト
+        // CountUpActivityに遷移したことをテスト
         assertEquals(1, count_up_activity_monitor.getHits());
 
         // バックボタンを押してMainActivityに戻る
@@ -74,13 +74,12 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
         // 遷移が完了するまで待つ
         getInstrumentation().waitForMonitorWithTimeout(main_activity_monitor, 2000);
 
-        // CountUpActvityに遷移したことをテスト
+        // CountUpActivityに遷移したことをテスト
         assertEquals(1, zero_one_activity_monitor.getHits());
 
         // バックボタンを押してMainActivityに戻る
         this.sendKeys(KeyEvent.KEYCODE_BACK);
         getInstrumentation().waitForIdleSync();
-
 
     }
 }
