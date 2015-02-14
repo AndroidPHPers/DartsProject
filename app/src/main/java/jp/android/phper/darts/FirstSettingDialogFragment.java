@@ -6,20 +6,11 @@ import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.NumberPicker;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link FirstSettingDialogFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link FirstSettingDialogFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class FirstSettingDialogFragment extends DialogFragment {
     public Dialog onCreateDialog(Bundle bunle){
         LayoutInflater inflater = getActivity().getLayoutInflater();
@@ -37,9 +28,8 @@ public class FirstSettingDialogFragment extends DialogFragment {
 
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                if (isAdded() && getActivity() instanceof GameActivityInterface) {
-                    ((CountUpActivity) getActivity()).firstSettingDialogClick(numberPicker.getValue());
-                }
+                ScorePanelFragment scorePanelFragment = (ScorePanelFragment)getFragmentManager().findFragmentById(R.id.ScorePanel);
+                scorePanelFragment.setPlayerNum(numberPicker.getValue());
             }
         });
 
