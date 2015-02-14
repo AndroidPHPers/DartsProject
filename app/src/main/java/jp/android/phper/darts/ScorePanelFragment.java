@@ -3,6 +3,7 @@ package jp.android.phper.darts;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 //import android.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,8 +45,18 @@ public class ScorePanelFragment extends Fragment {
     }
 
     public void setPlayerNum(int num) {
-        playerNum = num;
+        int i;
+        Log.v("numberPicker", "set PlayerNum");
+        for (i = 0; i < MAX_PLAYER_NUM; i++) {
+            playerScore[i].setVisibility(View.GONE);
+        }
+        for (i = 0; i < num; i++) {
+            playerScore[i].setVisibility(View.VISIBLE);
+        }
+
     }
+
+
 
     public void setPlayerScoreDisplay(int index, int flag) {
         playerScore[index].setVisibility(flag);
