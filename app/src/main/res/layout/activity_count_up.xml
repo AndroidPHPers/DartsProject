@@ -9,28 +9,5 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="jp.android.phper.darts.CountUpActivity">
 
-
-    <LinearLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical"
-        android:weightSum="1">
-
-        <fragment
-            android:id="@+id/ScorePanel"
-            android:name="jp.android.phper.darts.ScorePanelFragment"
-            android:layout_width="match_parent"
-            android:layout_height="99dp"
-            tools:layout="@layout/fragment_score_panel" />
-
-        <fragment
-            android:id="@+id/CalcPanel"
-            android:name="jp.android.phper.darts.CalcPanelFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            tools:layout="@layout/fragment_calc_panel" />
-
-    </LinearLayout>
+    <include layout="@layout/game_activity_layout"></include>
 </RelativeLayout>
