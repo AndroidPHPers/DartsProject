@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="number_limit_over">%1$d以下の値を入力してください。</string>
+</resources>
