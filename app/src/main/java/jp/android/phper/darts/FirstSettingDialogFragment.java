@@ -42,7 +42,7 @@ public class FirstSettingDialogFragment extends DialogFragment {
 
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                if (isAdded() && getActivity() instanceof CountUpActivity) {
+                if (isAdded() && getActivity() instanceof GameActivityInterface) {
                     ((CountUpActivity) getActivity()).firstSettingDialogClick(numberPicker.getValue());
                     Log.v("numberPicker", (String.valueOf(numberPicker.getValue())));
                 }

@@ -20,7 +20,7 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class CountUpActivity extends FragmentActivity {
+public class CountUpActivity extends FragmentActivity implements GameActivityInterface {
     private ScorePanelFragment scorePanelFragment;
     private CalcPanelFragment calcPanelFragment;
 
