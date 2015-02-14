@@ -8,11 +8,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-
 public class CountUpActivity extends FragmentActivity implements GameActivityInterface {
     private ScorePanelFragment scorePanelFragment;
-    //private CalcPanelFragment calcPanelFragment;
-
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
@@ -21,14 +18,8 @@ public class CountUpActivity extends FragmentActivity implements GameActivityInt
         setContentView(R.layout.activity_count_up);
 
         scorePanelFragment = (ScorePanelFragment) getSupportFragmentManager().findFragmentById(R.id.ScorePanel);
-
-        FirstSettingDialogFragment firstSettingDialog = new FirstSettingDialogFragment();
-        firstSettingDialog.show(getSupportFragmentManager(), "SetPlayerNumber");
-    }
-
-    @Override
-    public void firstSettingDialogClick(int value) {
-        scorePanelFragment.setPlayerNum(value);
+        scorePanelFragment.setPlayerNum(2);
+        scorePanelFragment.showPlayerNumberSettingDialog();
     }
 
     @Override
