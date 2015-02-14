@@ -13,6 +13,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -20,6 +21,10 @@ import android.widget.Button;
 
 
 public class CountUpActivity extends FragmentActivity {
+    private ScorePanelFragment scorePanelFragment;
+    private CalcPanelFragment calcPanelFragment;
+
+
 
 //public class CountUpActivity extends Activity {
 
@@ -46,7 +51,11 @@ public class CountUpActivity extends FragmentActivity {
 //        transaction.add(R.id.fragment_container, calcPanelFragment , "calcPanelFragment");
 //        transaction.commit();
 
-        final ScorePanelFragment scorePanelFragment = (ScorePanelFragment) getSupportFragmentManager().findFragmentById(R.id.ScorePanel);
+        //final ScorePanelFragment scorePanelFragment = (ScorePanelFragment) getSupportFragmentManager().findFragmentById(R.id.ScorePanel);
+        scorePanelFragment = (ScorePanelFragment) getSupportFragmentManager().findFragmentById(R.id.ScorePanel);
+
+        FirstSettingDialogFragment firstSettingDialog = new FirstSettingDialogFragment();
+        firstSettingDialog.show(getSupportFragmentManager(), "SetPlayerNumber");
 
         // FIXME 動作テスト
         Button btn1 = (Button)findViewById(R.id.key_1);
@@ -97,6 +106,10 @@ public class CountUpActivity extends FragmentActivity {
 
     }
 
+    public void firstSettingDialogClick(int value) {
+        scorePanelFragment.setPlayerNum(value);
+        Log.v("numberPicker", "call firstSettingDialogClick");
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
