@@ -5,13 +5,23 @@ import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+/**
+ * ゼロワンゲーム
+ */
+public class ZeroOneActivity extends FragmentActivity implements GameActivityInterface {
 
-public class ZeroOneActivity extends FragmentActivity {
-
+    /**
+     * Activity初期化時の処理
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zero_one);
+        // 初期設定ダイアログを表示
+        FirstSettingDialogFragment firstSettingDialog = new FirstSettingDialogFragment();
+        firstSettingDialog.show(getSupportFragmentManager(), "SetPlayerNumber");
+
     }
 
 
@@ -34,5 +44,15 @@ public class ZeroOneActivity extends FragmentActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     * クリックしたキーのIDをフラグメントにセットするコールバック関数
+     * @param keyId
+     */
+    public void setKeyType(int keyId) {
+        // スコアパネルフラグメントを取得
+        ThrowScorePanelFragment throwScorePanel = (ThrowScorePanelFragment) getSupportFragmentManager().findFragmentById(R.id.ThrowScorePanel);
+        throwScorePanel.setKeyType(keyId);
     }
 }

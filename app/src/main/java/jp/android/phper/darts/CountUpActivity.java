@@ -8,7 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class CountUpActivity extends FragmentActivity implements GameActivityInterface {
+public class CountUpActivity extends FragmentActivity {
     private ScorePanelFragment scorePanelFragment;
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
