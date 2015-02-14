@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="min_player_num">1</integer>
+    <integer name="max_player_num">4</integer>
+    <integer name="default_player_num">2</integer>
+</resources>
