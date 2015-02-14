@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "jp.android.phper.darts"
-        minSdkVersion 8
+        minSdkVersion 11
         targetSdkVersion 18
     }
 
