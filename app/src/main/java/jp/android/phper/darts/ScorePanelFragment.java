@@ -56,4 +56,14 @@ public class ScorePanelFragment extends Fragment {
         firstSettingDialog.show(getFragmentManager(), "setPlayerNumber");
     }
 
+    /**
+     * スコア初期化メソッド
+     * @param score
+     */
+    public void initializeScore(String score) {
+        for(TextView scoreView : playerScore) {
+            scoreView.setText(score);
+        }
+    }
+
 }

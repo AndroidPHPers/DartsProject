@@ -16,7 +16,6 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical|center"
-            android:text="TextView"
             android:textSize="25dip" />
 
         <TextView
@@ -25,7 +24,6 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical|center"
-            android:text="TextView"
             android:textSize="25dip" />
 
         <TextView
@@ -34,7 +32,6 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical|center"
-            android:text="TextView"
             android:textSize="25dip" />
 
         <TextView
@@ -43,7 +40,6 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical|center"
-            android:text="TextView"
             android:textSize="25dip" />
     </LinearLayout>
 </FrameLayout>
