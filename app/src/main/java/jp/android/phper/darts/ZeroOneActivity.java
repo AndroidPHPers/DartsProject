@@ -21,7 +21,9 @@ public class ZeroOneActivity extends FragmentActivity implements GameActivityInt
         // 初期設定ダイアログを表示
         FirstSettingDialogFragment firstSettingDialog = new FirstSettingDialogFragment();
         firstSettingDialog.show(getSupportFragmentManager(), "SetPlayerNumber");
-
+        // スコアパネルフラグメントに初期点数をセット
+        ScorePanelFragment scorePanelFragment = (ScorePanelFragment) getSupportFragmentManager().findFragmentById(R.id.ScorePanel);
+        scorePanelFragment.initializeScore("501");
     }
 
 
